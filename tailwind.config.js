@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        manrope: ["Manrope", "sans-serif"],
-        jakarta: ["Plus Jakarta Sans", "sans-serif"],
+        primary: ["Manrope", "sans-serif"],
+        secondary: ["Plus Jakarta Sans", "sans-serif"],
       },
     },
   },
