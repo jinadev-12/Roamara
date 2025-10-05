@@ -3,32 +3,46 @@ import React from 'react'
 function Navbar() {
   return (
     // main
-    <div>
+    <div className="fixed w-[100%] z-20">
       {/* Container */}
-      <div className="">
-        {/* logo and div */}
-        <div>
+      <div className=" flex justify-between items-center  m-auto max-w-[1350px] font-secondary pt-9 pb-2 bg-transparent">
+        {/* logo and links */}
+        <div className="flex gap-4 text-black">
           {/* logo */}
-          <div className='font-'>RM</div>
+          <div className="font-primary flex gap-2 ">
+            <h1 className="text-lg">RM</h1>
+            <div class="w-px h-6 bg-gray-400"></div>
+          </div>
+
           {/* links */}
           <div>
-            <ul>
+            <ul className="flex gap-5 font-medium">
               <li>
-                <a href="#"></a>
+                <a href="#ranch-life">Ranch life</a>
               </li>
               <li>
-                <a href="#"></a>
+                <a href="#about-us">About us</a>
               </li>
               <li>
-                <a href="#"></a>
+                <a href="#events">Events</a>
               </li>
               <li>
-                <a href="#"></a>
+                <a href="#directions">Directions</a>
               </li>
               <li>
-                <a href="#"></a>
+                <a href="#Houses">Houses</a>
               </li>
             </ul>
+          </div>
+        </div>
+        {/* menu and book a vist buttons */}
+        <div className="">
+          {/* book button */}
+          <div className=""></div>
+          {/* menu-button */}
+          <div className="group text-white bg-black inline-block py-3 px-6 rounded-lg font-medium cursor-pointer">
+            Plan a Trip
+            <i className="ri-sparkling-line ml-3  transition-transform duration-300 transform group-hover:rotate-[15deg]"></i>
           </div>
         </div>
       </div>
