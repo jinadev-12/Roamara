@@ -7,11 +7,19 @@ function Hero() {
     <div className="p-4 h-[100vh]">
       {/* HERO SECTION */}
       <div className="relative w-full h-full overflow-hidden rounded-lg">
+        {/* Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+        />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70"></div>
 
         {/* Content container */}
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+        <div className="relative flex flex-col justify-center items-center h-full text-center px-4">
           <div className="max-w-3xl flex flex-col items-center">
             {/* Heading */}
             <h1 className="text-7xl md:text-[120px] lg:text-[200px] font-medium tracking-wide mb-4 text-bgcolor font-primary">
