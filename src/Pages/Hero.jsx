@@ -1,9 +1,7 @@
 import React from 'react'
 
 function Hero() {
-  return (
-    <div>Hero</div>
-  )
+  return <div className="text-8xl font-jakarta">Hero</div>;
 }
 
 export default Hero
