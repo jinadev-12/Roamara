@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
   return (
     // main
-    <div className="fixed w-[100%] z-20">
+    <div className="fixed w-[100%] z-20 px-8">
       {/* Container */}
       <div className=" flex justify-between items-center  m-auto max-w-[1350px] font-secondary pt-9 pb-2 bg-transparent">
         {/* logo and links */}
