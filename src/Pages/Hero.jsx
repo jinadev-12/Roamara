@@ -6,7 +6,7 @@ function Hero() {
     // Outer wrapper for section spacing
     <div className="p-4 h-[100vh]">
       {/* HERO SECTION */}
-      <div className="relative w-full h-full overflow-hidden rounded-lg">
+      <div className="relative w-full h-full overflow-hidden rounded-lg ">
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
