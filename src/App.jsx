@@ -8,9 +8,9 @@ import Hero from './Pages/Hero';
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
+    <div className="bg-bgcolor">
+      <Navbar />
+      <Hero />
     </div>
   );
 }
