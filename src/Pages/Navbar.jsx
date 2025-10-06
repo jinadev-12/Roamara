@@ -1,13 +1,43 @@
-import React,{useState} from 'react'
+import React, { useEffect, useRef,useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Navbar() {
-      const [isOpen, setIsOpen] = useState(false);
-      const sidebaropen = () => {
-        setIsOpen(!isOpen);
-      };
+
+ const sectionRef = useRef(null);
+
+ useEffect(() => {
+   const ctx = gsap.context(() => {
+     gsap.fromTo(
+       sectionRef.current,
+       { y: -40, autoAlpha: 0 }, // start
+       {
+         y: 0,
+         autoAlpha: 1, // end
+         duration: 1,
+         delay:3.5,
+         ease: "power4.in",
+         scrollTrigger: {
+           trigger: sectionRef.current,
+           start: "top 80%",
+         },
+       }
+     );
+   }, sectionRef);
+ }, []);
+
+
+
+
+
+  const [isOpen, setIsOpen] = useState(false);
+  const sidebaropen = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     // main
-    <div className="fixed w-[100%] z-20 px-4">
+    <div ref={sectionRef} className="fixed w-[100%] z-20 px-4">
       {/* Container */}
       <div className=" flex justify-between w-[90%] text-bgcolor items-center  m-auto max-w-[1350px] font-secondary pt-9 pb-2 bg-transparent">
         {/* logo and links */}
@@ -93,4 +123,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;
