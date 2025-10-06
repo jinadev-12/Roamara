@@ -54,7 +54,7 @@ function Hero() {
   return (
     <div className="p-4 h-[100vh]">
       <div className="relative w-full h-full overflow-hidden rounded-lg">
-        {/* Optional Video */}
+        {/*  Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
           src="../public/heroBG.mp4"
