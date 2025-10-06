@@ -7,7 +7,7 @@ export default {
         bgcolor: "#efe5d7", // custom background color
       },
       fontFamily: {
-        primary: ["Arvo", "sans-serif"],
+        primary: ["Playfair Display", "sans-serif"],
         secondary: ["Manrope", "sans-serif"],
       },
     },

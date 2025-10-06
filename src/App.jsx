@@ -13,8 +13,9 @@ function App() {
     <div className="bg-bgcolor">
       <Navbar />
       <Hero />
+
+      <Events />
       <Footer />
-      <Events/>
     </div>
   );
 }
