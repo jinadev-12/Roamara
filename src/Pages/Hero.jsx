@@ -55,7 +55,13 @@ function Hero() {
     <div className="p-4 h-[100vh]">
       <div className="relative w-full h-full overflow-hidden rounded-lg">
         {/* Optional Video */}
-        <video className="absolute inset-0 w-full h-full object-cover" src={heroVideo} autoPlay loop muted />
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70"></div>
 
         <div className="relative flex flex-col justify-center items-center h-full text-center px-4">
@@ -63,7 +69,7 @@ function Hero() {
             {/* Heading */}
             <h1
               ref={titleRef}
-              className="flex justify-center text-7xl md:text-[120px] lg:text-[200px] font-medium tracking-wide mb-4 text-bgcolor font-primary"
+              className="flex justify-center text-6xl md:text-8xl lg:text-[clamp(6rem,10vw,200px)] font-medium tracking-wide mb-4 text-bgcolor font-primary"
             >
               <div className="letter">R</div>
               <div className="letter">O</div>
