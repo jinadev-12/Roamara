@@ -3,6 +3,7 @@ import './index.css'
 import Navbar from './Pages/Navbar';
 import Hero from './Pages/Hero';
 import Footer from './Pages/Footer';
+import Events from './Pages/Events';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Footer />
+      <Events/>
     </div>
   );
 }
