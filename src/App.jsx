@@ -4,6 +4,7 @@ import Navbar from './Pages/Navbar';
 import Hero from './Pages/Hero';
 import Footer from './Pages/Footer';
 import Events from './Pages/Events';
+import Beauty from './Pages/Beauty';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Hero />
 
       <Events />
+      <Beauty/>
       <Footer />
     </div>
   );
