@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import heroVideo from "../public/heroBG.mp4";
+
 
 function Hero() {
   const titleRef = useRef(null);
@@ -57,7 +57,7 @@ function Hero() {
         {/* Optional Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src={heroVideo}
+          src="../public/heroBG.mp4"
           autoPlay
           loop
           muted

@@ -18,13 +18,15 @@ function Navbar() {
          duration: 1,
          delay:3.5,
          ease: "power4.in",
-         scrollTrigger: {
-           trigger: sectionRef.current,
-           start: "top 80%",
-         },
+        
        }
      );
-   }, sectionRef);
+   });
+
+   return () => {
+     // cleanup GSAP context and any ScrollTrigger instances created inside it
+     ctx.revert();
+   };
  }, []);
 
 
