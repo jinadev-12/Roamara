@@ -7,8 +7,8 @@ export default {
         bgcolor: "#efe5d7", // custom background color
       },
       fontFamily: {
-        primary: ["Cinzel", "sans-serif"],
-        secondary: ["Plus Jakarta Sans", "sans-serif"],
+        primary: ["Arvo", "sans-serif"],
+        secondary: ["Manrope", "sans-serif"],
       },
     },
   },
