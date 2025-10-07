@@ -41,7 +41,7 @@ function Beauty() {
           alt=""
         />
         <h1 className="mt-3 text-5xl font-bold font-primary">WESTERN BEAUTY</h1>
-        <p className="mt-4 text-lg font-secondary font-extralight">
+        <p className="mt-4 text-base font-secondary font-extralight">
           The river whispers secrets in the golden light — a canoe gliding past
           reeds, the rustle of willows, sunlight sparkling like scattered gems
           on water.

@@ -33,14 +33,13 @@ function Events() {
           {/* heading */}
           <h3
             ref={headingRef}
-            className="text-xl font-primary md:text-3xl lg:text-4xl max-w-[900px] m-auto leading-normal md:leading-normal lg:leading-normal flex flex-wrap justify-center"
+            className="text-xl font-secondary md:text-3xl lg:text-4xl max-w-[900px] m-auto leading-normal md:leading-normal lg:leading-normal flex flex-wrap justify-center"
           >
             {words.map((word, index) => (
               <span key={index} className="mr-2 inline-block">
                 {word}
               </span>
             ))}
-          
           </h3>
         </div>
 
@@ -54,16 +53,16 @@ function Events() {
               className="object-cover object-center h-full"
             />
             {/* text */}
-            <div className="absolute bottom-5 left-10 text-left text-white lg:pr-20 pr-2 font-primary flex flex-col gap-10">
+            <div className="absolute bottom-5 left-10 text-left text-white lg:pr-20 pr-2 flex flex-col gap-10">
               <img
                 src="https://cdn.prod.website-files.com/685077c466f1137…796b/68540427bc46875dd34cd085_Kaleo_Icon-dark.svg"
                 alt=""
                 className=""
               />
-              <h2 className="text-3xl md:text-4xl lg:text-4xl">
+              <h2 className="text-3xl md:text-4xl lg:text-4xl font-primary uppercase">
                 Where the day begins slowly and the horizon feels endless.
               </h2>
-              <hr className="text-white  w-9" />
+              <hr className="text-white w-9" />
               <p>
                 Roamara is a sanctuary for those seeking stillness, clarity, and
                 calm. Nestled among gentle hills and open skies, it offers a
@@ -73,23 +72,23 @@ function Events() {
             </div>
           </div>
           {/* right-container */}
-          <div className="relative  rounded-xl overflow-hidden h-[590px] w-full">
+          <div className="relative rounded-xl overflow-hidden h-[590px] w-full">
             <img
               src={right}
               alt=""
               className="object-cover object-center h-full"
             />
             {/* text */}
-            <div className="absolute bottom-5 left-10 text-left text-white lg:pr-20 pr-2 font-primary flex flex-col gap-10">
+            <div className="absolute bottom-5 left-10 text-left text-white lg:pr-20 pr-2 flex flex-col gap-10">
               <img
                 src="https://cdn.prod.website-files.com/685077c466f1137…796b/68540427bc46875dd34cd085_Kaleo_Icon-dark.svg"
                 alt=""
                 className=""
               />
-              <h2 className="text-3xl md:text-4xl lg:text-4xl">
+              <h2 className="text-3xl md:text-4xl uppercase font-primary lg:text-4xl">
                 “ A return to quiet mornings and skies that stretch forever.”{" "}
               </h2>
-              <hr className="text-white  w-9" />
+              <hr className="text-white w-9" />
               <p>
                 Roamara welcomes those who crave simplicity, quiet, and space to
                 reflect. Set within rolling hills beneath endless skies, it
