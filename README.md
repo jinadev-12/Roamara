@@ -35,3 +35,12 @@ gsap.registerPlugin(ScrollTrigger);
      }, sectionRef);
    
    },[])
+
+<!-- {/* <div className="h-full w-full flex justify-center items-center p-5 overflow-hidden">
+  <img
+    ref={imageRef}
+    src={image}
+    alt="Scroll Effect"
+    className="w-[50%] max-w-full h-auto rounded-xl transition-all duration-500 object-contain sm:w-[60%] md:w-[50%] lg:w-[50%]"
+  />
+</div>; */} -->
