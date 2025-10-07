@@ -52,18 +52,21 @@ function Events() {
               alt=""
               className="object-cover object-center h-full"
             />
+            {/* overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/40"></div>
+
             {/* text */}
-            <div className="absolute bottom-5 left-10 text-left text-white lg:pr-20 pr-2 flex flex-col gap-10">
+            <div className="absolute bottom-0 left-0  text-left text-white lg:pr-20 p-4 flex flex-col gap-10">
               <img
                 src="https://cdn.prod.website-files.com/685077c466f1137…796b/68540427bc46875dd34cd085_Kaleo_Icon-dark.svg"
                 alt=""
                 className=""
               />
-              <h2 className="text-3xl md:text-4xl lg:text-4xl font-primary uppercase">
+              <h2 className="text-3xl  lg:text-4xl font-primary uppercase ">
                 Where the day begins slowly and the horizon feels endless.
               </h2>
               <hr className="text-white w-9" />
-              <p>
+              <p className="font-secondary">
                 Roamara is a sanctuary for those seeking stillness, clarity, and
                 calm. Nestled among gentle hills and open skies, it offers a
                 place to pause, breathe fully, and reconnect with the rhythm of
@@ -77,19 +80,21 @@ function Events() {
               src={right}
               alt=""
               className="object-cover object-center h-full"
-            />
+            />{" "}
+            {/* overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/5 to-black/20"></div>
             {/* text */}
-            <div className="absolute bottom-5 left-10 text-left text-white lg:pr-20 pr-2 flex flex-col gap-10">
+            <div className="absolute bottom-0 left-0 p-4 text-left text-white lg:pr-20 pr-2 flex flex-col gap-10">
               <img
                 src="https://cdn.prod.website-files.com/685077c466f1137…796b/68540427bc46875dd34cd085_Kaleo_Icon-dark.svg"
                 alt=""
                 className=""
               />
-              <h2 className="text-3xl md:text-4xl uppercase font-primary lg:text-4xl">
+              <h2 className="text-3xl uppercase font-primary lg:text-4xl">
                 “ A return to quiet mornings and skies that stretch forever.”{" "}
               </h2>
               <hr className="text-white w-9" />
-              <p>
+              <p className="font-secondary">
                 Roamara welcomes those who crave simplicity, quiet, and space to
                 reflect. Set within rolling hills beneath endless skies, it
                 invites you to slow your pace, breathe deeply, and find your
