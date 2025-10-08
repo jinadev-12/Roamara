@@ -6,6 +6,7 @@ import Footer from './Pages/Footer';
 import Events from './Pages/Events';
 import Beauty from './Pages/Beauty';
 import AboutUs from './Pages/AboutUs';
+import Direction from './Pages/Direction';
 
 
 
@@ -18,6 +19,7 @@ function App() {
       {/* section final */}
       <AboutUs/>
       <Events />
+      <Direction />
       <Beauty/>
       <Footer />
     </div>

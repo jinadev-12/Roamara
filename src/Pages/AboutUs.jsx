@@ -51,7 +51,7 @@ const AboutUs = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen bg-bgcolor flex justify-center items-center p-4"
+      className="relative h-screen bg-bgcolor flex justify-center items-center p-4 font-secondary"
     >
       {/* container */}
       <div className="h-full w-full flex justify-center items-center overflow-hidden relative">
@@ -68,13 +68,13 @@ const AboutUs = () => {
           className="absolute opacity-0 translate-y-10 flex flex-col items-center justify-center text-white text-center"
         >
           <h2
-            className="font-bold mb-6 tracking-wide font-primary"
+            className="font-bold mb-4 tracking-wide font-primary"
             style={{ fontSize: "clamp(48px, 10vw, 160px)" }}
           >
             NATURAL
           </h2>
 
-          <div className="text-bgcolor bg-black py-3 px-8 rounded-lg font-medium cursor-pointer transition-all duration-300 hover:bg-black/90 text-base flex items-center justify-center text-center group">
+          <div className="text-bgcolor bg-black py-3 px-8 rounded-md font-medium cursor-pointer transition-all duration-300 hover:bg-black/90 text-base flex items-center justify-center text-center group">
             Plan a Trip
             <i className="ri-sparkling-line ml-3 transition-transform duration-300 transform group-hover:scale-150"></i>
           </div>
