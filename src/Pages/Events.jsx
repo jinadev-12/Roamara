@@ -26,7 +26,7 @@ function Events() {
       {/* Container */}
       <div className="w-[92%] m-auto  text-center  py-24 font-secondary">
         {/* text */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-[90%] mx-auto">
           <p className="font-secondary font-extralight uppercase">
             The Land, The Spirit, The Name
           </p>

@@ -29,7 +29,7 @@ function Footer() {
 
           {/* content */}
           <div className="content flex flex-col justify-between gap-10 lg:w-2/4 max-w-[650px]">
-            <h3 className="text-[26px] md:text-[32px] leading-snug font-medium font-primary">
+            <h3 className="text-lg md:text-xl leading-snug text-neutral-600 font-primary">
               We welcome kindred spirits. Whether you're looking for silence,
               space, or simply a change in pace — Kaleo is open.
             </h3>
