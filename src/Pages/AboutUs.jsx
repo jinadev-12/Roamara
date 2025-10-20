@@ -1,87 +1,112 @@
-import React, { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import image from "../Assets/about.jpg";
+import React from "react";
 
-gsap.registerPlugin(ScrollTrigger);
-
-const AboutUs = () => {
-  const imageRef = useRef(null);
-  const sectionRef = useRef(null);
-  const textRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // image grow animation
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "+=1500",
-          scrub: true,
-          height: "auto",
-          pin: true,
-        },
-      });
-
-      // Step 1: Image grows
-      tl.to(imageRef.current, {
-        width: "100%",
-        height: "100%",
-        objectFit: "cover",
-        ease: "none",
-      });
-
-      // Step 2: Text fades in AFTER image fully grown
-      tl.to(
-        textRef.current,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out",
-        },
-        ">80%" // start near the end of image grow
-      );
-    });
-
-    return () => ctx.revert();
-  }, []);
-
+function RanchLife() {
   return (
-    <section
-      ref={sectionRef}
-      className="relative h-screen bg-bgcolor flex justify-center items-center p-4 font-secondary"
-    >
-      {/* container */}
-      <div className="h-full w-full flex justify-center items-center overflow-hidden relative">
-        <img
-          ref={imageRef}
-          src={image}
-          alt="Scroll Effect"
-          className="w-[50%] max-w-full h-auto rounded-xl transition-all duration-0 object-contain sm:w-[50%] md:w-[50%] lg:w-[50%]"
-        />
+    // ranch
+    <div className="lg:h-[100vh]">
+      {/* upperblock */}
+      <div className="bg-black text-white py-12">
+        {/* container */}
+        <div className="max-w-[1400px] w-[90%] mx-auto flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
+          {/* states */}
+          <div className="flex flex-col sm:flex-row gap-6">
+            {/* state */}
+            <div className="flex flex-col items-center sm:items-start">
+              <div className="text-2xl font-bold">
+                4.5 <span className="text-green-400">M</span>
+              </div>
+              <p className="text-sm text-gray-300">Sea games participation</p>
+            </div>
+            {/* state */}
+            <div className="flex flex-col items-center sm:items-start">
+              <div className="text-2xl font-bold">
+                4.5 <span className="text-green-400">M</span>
+              </div>
+              <p className="text-sm text-gray-300">Sea games participation</p>
+            </div>
+            {/* state */}
+            <div className="flex flex-col items-center sm:items-start">
+              <div className="text-2xl font-bold">
+                4.5 <span className="text-green-400">M</span>
+              </div>
+              <p className="text-sm text-gray-300">Sea games participation</p>
+            </div>
+          </div>
 
-        {/* centered text and button */}
-        <div
-          ref={textRef}
-          className="absolute opacity-0 translate-y-10 flex flex-col items-center justify-center text-white text-center"
-        >
-          <h2
-            className="font-bold mb-4 tracking-wide font-primary"
-            style={{ fontSize: "clamp(48px, 10vw, 160px)" }}
-          >
-            NATURAL
-          </h2>
-
-          <div className="text-bgcolor bg-black py-3 px-8 rounded-md font-medium cursor-pointer transition-all duration-300 hover:bg-black/90 text-base flex items-center justify-center text-center group">
-            Plan a Trip
-            <i className="ri-sparkling-line ml-3 transition-transform duration-300 transform group-hover:scale-150"></i>
+          {/* join */}
+          <div className="mt-6 lg:mt-0 flex flex-col lg:items-end gap-4">
+            <p className="max-w-md text-gray-200">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+              commodi, assumenda dignissimos molestias voluptates tenetur quos
+              quia ipsum officia expedita! Amet nisi perspiciatis error odit,
+              voluptas culpa animi natus officia.
+            </p>
+            <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-md transition">
+              Join member
+            </button>
           </div>
         </div>
       </div>
-    </section>
-  );
-};
 
-export default AboutUs;
+      {/* lower block */}
+      <div className="w-[90%] mx-auto max-w-[1400px] py-12 flex flex-col gap-10">
+        {/* head */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+          <div>
+            <h2 className="text-3xl font-bold mb-2">We offer you</h2>
+            <p className="text-gray-700 max-w-md">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Quisquam, ducimus! Ex at, ipsum nam velit qui similique.
+            </p>
+          </div>
+          <button className="bg-black text-white font-semibold py-2 px-6 rounded-md hover:bg-gray-800 transition">
+            Explore the services
+          </button>
+        </div>
+
+        {/* card container */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* card */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex flex-col gap-4">
+            {/* icon here */}
+            <h3 className="text-xl font-semibold">Yoga classes</h3>
+            <p className="text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              molestiae earum accusantium architecto minus.
+            </p>
+            <button className="mt-auto bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-md transition">
+              View More
+            </button>
+          </div>
+          {/* card */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex flex-col gap-4">
+            {/* icon here */}
+            <h3 className="text-xl font-semibold">Yoga classes</h3>
+            <p className="text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              molestiae earum accusantium architecto minus.
+            </p>
+            <button className="mt-auto bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-md transition">
+              View More
+            </button>
+          </div>
+          {/* card */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex flex-col gap-4">
+            {/* icon here */}
+            <h3 className="text-xl font-semibold">Yoga classes</h3>
+            <p className="text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              molestiae earum accusantium architecto minus.
+            </p>
+            <button className="mt-auto bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-md transition">
+              View More
+            </button>
+          </div>
+          {/* Add more cards here if needed */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default RanchLife;
