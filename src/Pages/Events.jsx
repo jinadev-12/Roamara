@@ -24,16 +24,16 @@ function Events() {
     // main
     <div className="">
       {/* Container */}
-      <div className="w-[95%] m-auto  text-center py-14 ">
+      <div className="w-[92%] m-auto  text-center  py-24 font-secondary">
         {/* text */}
-        <div className="flex flex-col gap-5">
-          <p className="font-secondary font-extralight">
+        <div className="flex flex-col gap-5 w-[90%] mx-auto">
+          <p className="font-secondary font-extralight uppercase">
             The Land, The Spirit, The Name
           </p>
           {/* heading */}
           <h3
             ref={headingRef}
-            className="text-xl font-secondary md:text-3xl lg:text-4xl max-w-[900px] m-auto leading-normal md:leading-normal lg:leading-normal flex flex-wrap justify-center"
+            className="text-xl md:text-3xl lg:text-4xl max-w-[900px] m-auto leading-normal flex flex-wrap justify-center"
           >
             {words.map((word, index) => (
               <span key={index} className="mr-2 inline-block">
@@ -44,9 +44,9 @@ function Events() {
         </div>
 
         {/* image-container */}
-        <div className=" flex flex-col  md:flex-row  justify-between  gap-5 mt-10">
+        <div className=" flex flex-col  md:flex-row  justify-between  gap-5 mt-16 max-w-[1400px] mx-auto">
           {/* left-container */}
-          <div className="relative  rounded-xl overflow-hidden h-[590px] w-full">
+          <div className="relative  rounded-lg overflow-hidden h-[590px] w-full">
             <img
               src={left}
               alt=""
@@ -56,17 +56,17 @@ function Events() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/40"></div>
 
             {/* text */}
-            <div className="absolute bottom-0 left-0  text-left text-white lg:pr-20 p-4 flex flex-col gap-10">
+            <div className="absolute bottom-0 left-0 p-6 lg:p-10 lg:pr-24 text-left text-white flex flex-col gap-10">
               <img
                 src="https://cdn.prod.website-files.com/685077c466f1137…796b/68540427bc46875dd34cd085_Kaleo_Icon-dark.svg"
                 alt=""
                 className=""
               />
-              <h2 className="text-3xl  lg:text-4xl font-primary uppercase ">
+              <h2 className="text-2xl  lg:text-3xl font-primary uppercase ">
                 Where the day begins slowly and the horizon feels endless.
               </h2>
               <hr className="text-white w-9" />
-              <p className="font-secondary">
+              <p className="font-secondary text-[#ddd]">
                 Roamara is a sanctuary for those seeking stillness, clarity, and
                 calm. Nestled among gentle hills and open skies, it offers a
                 place to pause, breathe fully, and reconnect with the rhythm of
@@ -75,7 +75,7 @@ function Events() {
             </div>
           </div>
           {/* right-container */}
-          <div className="relative rounded-xl overflow-hidden h-[590px] w-full">
+          <div className="relative rounded-lg overflow-hidden h-[590px] w-full">
             <img
               src={right}
               alt=""
@@ -84,17 +84,17 @@ function Events() {
             {/* overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/5 to-black/20"></div>
             {/* text */}
-            <div className="absolute bottom-0 left-0 p-4 text-left text-white lg:pr-20 pr-2 flex flex-col gap-10">
+            <div className="absolute bottom-0 left-0 p-6 lg:p-10 lg:pr-24 text-left text-white flex flex-col gap-10">
               <img
                 src="https://cdn.prod.website-files.com/685077c466f1137…796b/68540427bc46875dd34cd085_Kaleo_Icon-dark.svg"
                 alt=""
                 className=""
               />
-              <h2 className="text-3xl uppercase font-primary lg:text-4xl">
+              <h2 className="text-2xl uppercase font-primary lg:text-3xl">
                 “ A return to quiet mornings and skies that stretch forever.”{" "}
               </h2>
               <hr className="text-white w-9" />
-              <p className="font-secondary">
+              <p className="font-secondary text-[#ddd]">
                 Roamara welcomes those who crave simplicity, quiet, and space to
                 reflect. Set within rolling hills beneath endless skies, it
                 invites you to slow your pace, breathe deeply, and find your

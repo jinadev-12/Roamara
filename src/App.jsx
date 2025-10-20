@@ -6,6 +6,9 @@ import Footer from './Pages/Footer';
 import Events from './Pages/Events';
 import Beauty from './Pages/Beauty';
 import AboutUs from './Pages/AboutUs';
+import Direction from './Pages/Direction';
+import RanchLife from './Pages/RanchLife';
+
 
 
 
@@ -15,9 +18,10 @@ function App() {
     <div className="bg-bgcolor">
       <Navbar />
       <Hero />
-      {/* section final */}
+      <RanchLife />
       <AboutUs/>
       <Events />
+      <Direction />
       <Beauty/>
       <Footer />
     </div>

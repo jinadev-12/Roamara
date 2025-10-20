@@ -52,7 +52,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="p-4 h-[100vh]">
+    <div className="p-4 h-[100vh] font-secondary">
       <div className="relative w-full h-full overflow-hidden rounded-lg">
         {/*  Video */}
         {/* <video
