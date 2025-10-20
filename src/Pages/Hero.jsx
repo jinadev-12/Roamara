@@ -54,14 +54,14 @@ function Hero() {
   return (
     <div className="p-4 h-[100vh] font-secondary">
       <div className="relative w-full h-full overflow-hidden rounded-lg">
-        {/*  Video */}
-        {/* <video
+         {/* Video */}
+        <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="../public/heroBG.mp4"
+          src="heroBG.mp4"
           autoPlay
           loop
           muted
-        /> */}
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70"></div>
 
         <div className="relative flex flex-col justify-center items-center h-full text-center px-4">
