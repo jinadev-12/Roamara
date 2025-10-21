@@ -39,7 +39,7 @@ function Navbar() {
   };
   return (
     // main
-    <div ref={sectionRef} className="fixed w-[100%] z-20 px-4">
+    <div ref={sectionRef} className="absolute left-0 top-0 w-[100%] z-20 px-4">
       {/* Container */}
       <div className=" flex justify-between w-[90%] text-bgcolor items-center  m-auto max-w-[1350px] font-secondary pt-9 pb-2 bg-transparent">
         {/* logo and links */}

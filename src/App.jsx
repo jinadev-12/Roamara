@@ -16,8 +16,11 @@ import RanchLife from './Pages/RanchLife';
 function App() {
   return (
     <div className="bg-bgcolor">
+      <div className='relative'>
       <Navbar />
       <Hero />
+      </div>
+
       <RanchLife />
       <AboutUs/>
       <Events />
