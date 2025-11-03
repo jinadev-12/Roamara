@@ -1,110 +1,99 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import left from "../Assets/left-events.png";
-import right from "../Assets/right-events.png";
+import left from "../Assets/event-stage.jpg";
+import right from "../Assets/event-crowd.jpg";
 
 function Events() {
-
-  // gsap
   const headingRef = useRef(null);
 
-  // Split heading text into spans
   const headingText =
-    "Roamara began as a call to slow down, to remember- what matters, to find our roots again in a world that's forgotten stillness.";
+    "Where moments turn into memories — and energy fills the air.";
   const words = headingText.split(" ");
 
   useEffect(() => {
     gsap.fromTo(
       headingRef.current.querySelectorAll("span"),
-      { y: 0, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.1, ease: "sine.inOut", duration: 1.6 }
+      { y: 20, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.07,
+        ease: "power3.out",
+        duration: 1.2,
+      }
     );
   }, []);
-  return (
-    // main
-    <div className="">
-      {/* Container */}
-      <div className="w-[92%] m-auto  text-center  py-24 font-secondary">
-        {/* text */}
-        <div className="flex flex-col gap-5 w-[90%] mx-auto">
-          <p className="font-secondary font-extralight uppercase">
-            The Land, The Spirit, The Name
-          </p>
-          {/* heading */}
-          <h3
-            ref={headingRef}
-            className="text-xl md:text-3xl lg:text-4xl max-w-[900px] m-auto leading-normal flex flex-wrap justify-center"
-          >
-            {words.map((word, index) => (
-              <span key={index} className="mr-2 inline-block">
-                {word}
-              </span>
-            ))}
-          </h3>
-        </div>
 
-        {/* image-container */}
-        <div className=" flex flex-col  md:flex-row  justify-between  gap-5 mt-16 max-w-[1400px] mx-auto">
-          {/* left-container */}
-          <div className="relative  rounded-lg overflow-hidden h-[590px] w-full">
+  return (
+    <section className="text-[#2d2a26] py-24">
+      <div className="max-w-[1400px] w-[90%] mx-auto text-center font-secondary">
+        {/* Subtitle */}
+        <p className="text-sm tracking-[0.25em] uppercase text-[#9a8565] mb-5">
+          Energy. People. Moments.
+        </p>
+
+        {/* Heading */}
+        <h3
+          ref={headingRef}
+          className="text-2xl md:text-4xl lg:text-5xl max-w-[900px] mx-auto leading-tight font-light flex flex-wrap justify-center"
+        >
+          {words.map((word, index) => (
+            <span key={index} className="mr-2 inline-block">
+              {word}
+            </span>
+          ))}
+        </h3>
+
+        {/* Image Section */}
+        <div className="flex flex-col md:flex-row justify-between gap-8 mt-20">
+          {/* LEFT IMAGE - Crew */}
+          <div className="relative w-full h-[550px] overflow-hidden rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] group">
             <img
               src={left}
-              alt=""
-              className="object-cover object-center h-full"
+              alt="Event stage and crew"
+              className="w-full h-full object-cover object-center transition-transform duration-[2500ms] group-hover:scale-110"
             />
-            {/* overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-80 transition-all duration-700 group-hover:opacity-90"></div>
 
-            {/* text */}
-            <div className="absolute bottom-0 left-0 p-6 lg:p-10 lg:pr-24 text-left text-white flex flex-col gap-10">
-              <img
-                src="https://cdn.prod.website-files.com/685077c466f1137…796b/68540427bc46875dd34cd085_Kaleo_Icon-dark.svg"
-                alt=""
-                className=""
-              />
-              <h2 className="text-2xl  lg:text-3xl font-primary uppercase ">
-                Where the day begins slowly and the horizon feels endless.
+            {/* Text */}
+            <div className="absolute bottom-0 left-0 p-6 lg:p-10 text-left text-white flex flex-col gap-6">
+              <h2 className="text-2xl lg:text-3xl font-primary uppercase tracking-wide leading-snug">
+                Behind every spotlight, a team that makes it all happen.
               </h2>
-              <hr className="text-white w-9" />
-              <p className="font-secondary text-[#ddd]">
-                Roamara is a sanctuary for those seeking stillness, clarity, and
-                calm. Nestled among gentle hills and open skies, it offers a
-                place to pause, breathe fully, and reconnect with the rhythm of
-                the present moment.
+              <hr className="border-white w-9 opacity-70" />
+              <p className="font-secondary text-sm sm:text-base text-[#e6e6e6] max-w-[85%] leading-relaxed">
+                From sound to stage, the Roamara crew brings the event to life.
+                Dedicated, driven, and detail-obsessed — they turn vision into
+                experience.
               </p>
             </div>
           </div>
-          {/* right-container */}
-          <div className="relative rounded-lg overflow-hidden h-[590px] w-full">
+
+          {/* RIGHT IMAGE - Crowd */}
+          <div className="relative w-full h-[550px] overflow-hidden rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] group">
             <img
               src={right}
-              alt=""
-              className="object-cover object-center h-full"
-            />{" "}
-            {/* overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/5 to-black/20"></div>
-            {/* text */}
-            <div className="absolute bottom-0 left-0 p-6 lg:p-10 lg:pr-24 text-left text-white flex flex-col gap-10">
-              <img
-                src="https://cdn.prod.website-files.com/685077c466f1137…796b/68540427bc46875dd34cd085_Kaleo_Icon-dark.svg"
-                alt=""
-                className=""
-              />
-              <h2 className="text-2xl uppercase font-primary lg:text-3xl">
-                “ A return to quiet mornings and skies that stretch forever.”{" "}
+              alt="Event crowd enjoying music"
+              className="w-full h-full object-cover object-center transition-transform duration-[2500ms] group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-80 transition-all duration-700 group-hover:opacity-90"></div>
+
+            {/* Text */}
+            <div className="absolute bottom-0 left-0 p-6 lg:p-10 text-left text-white flex flex-col gap-6">
+              <h2 className="text-2xl lg:text-3xl font-primary uppercase tracking-wide leading-snug">
+                The crowd, the music, the magic of the moment.
               </h2>
-              <hr className="text-white w-9" />
-              <p className="font-secondary text-[#ddd]">
-                Roamara welcomes those who crave simplicity, quiet, and space to
-                reflect. Set within rolling hills beneath endless skies, it
-                invites you to slow your pace, breathe deeply, and find your
-                center.
+              <hr className="border-white w-9 opacity-70" />
+              <p className="font-secondary text-sm sm:text-base text-[#e6e6e6] max-w-[85%] leading-relaxed">
+                Lights flare, beats drop, and the crowd comes alive. Each person
+                adds their voice to the rhythm of the night — that’s the spirit
+                of Roamara events.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

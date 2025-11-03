@@ -25,7 +25,7 @@ function Beauty() {
         className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
           fade ? "opacity-0" : "opacity-100"
         }`}
-        src="/beautybg-1.mp4"
+        src="/buty-bg.mp4"
         autoPlay
         loop={false} // disable default loop
         muted
