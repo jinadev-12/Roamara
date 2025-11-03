@@ -1,37 +1,31 @@
-import React, { useEffect, useRef,useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Navbar() {
+  const sectionRef = useRef(null);
 
- const sectionRef = useRef(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        sectionRef.current,
+        { y: -40, autoAlpha: 0 }, // start
+        {
+          y: 0,
+          autoAlpha: 1, // end
+          duration: 1,
+          delay: 3.5,
+          ease: "power4.in",
+        }
+      );
+    });
 
- useEffect(() => {
-   const ctx = gsap.context(() => {
-     gsap.fromTo(
-       sectionRef.current,
-       { y: -40, autoAlpha: 0 }, // start
-       {
-         y: 0,
-         autoAlpha: 1, // end
-         duration: 1,
-         delay:3.5,
-         ease: "power4.in",
-        
-       }
-     );
-   });
-
-   return () => {
-     // cleanup GSAP context and any ScrollTrigger instances created inside it
-     ctx.revert();
-   };
- }, []);
-
-
-
-
+    return () => {
+      // cleanup GSAP context and any ScrollTrigger instances created inside it
+      ctx.revert();
+    };
+  }, []);
 
   const [isOpen, setIsOpen] = useState(false);
   const sidebaropen = () => {
@@ -74,7 +68,7 @@ function Navbar() {
         {/* menu and book a vist buttons */}
         <div className="flex items-center gap-5">
           {/* book button */}
-          <div className="hidden md:inline-block group text-white bg-black  py-3 px-6 rounded-lg font-medium cursor-pointer">
+          <div className="hidden md:inline-block group text-white bg-[#2d2a26]  py-3 px-6 rounded-lg font-medium cursor-pointer">
             Plan a Trip
             <i className="ri-sparkling-line ml-3  transition-transform duration-300 inline-block transform group-hover:scale-150"></i>
           </div>
