@@ -57,7 +57,7 @@ const RanchLife = () => {
           {ranchCards.map((card, index) => (
             <div
               key={index}
-              className="relative group overflow-hidden rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
+              className="relative group overflow-hidden rounded-3xl shadow-[0_40px_60px_rgba(0,0,0,0.2)]"
             >
               {/* background image */}
               <div
