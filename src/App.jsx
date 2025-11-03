@@ -5,9 +5,9 @@ import Hero from './Pages/Hero';
 import Footer from './Pages/Footer';
 import Events from './Pages/Events';
 import Beauty from './Pages/Beauty';
-import AboutUs from './Pages/AboutUs';
 import Direction from './Pages/Direction';
 import RanchLife from './Pages/RanchLife';
+import Natural from './Pages/Natural';
 
 
 
@@ -20,9 +20,8 @@ function App() {
       <Navbar />
       <Hero />
       </div>
-
       <RanchLife />
-      <AboutUs/>
+      <Natural />
       <Events />
       <Direction />
       <Beauty/>
