@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-
 function Hero() {
   const titleRef = useRef(null);
   const paraRef = useRef(null);
@@ -13,16 +12,15 @@ function Hero() {
 
     gsap.fromTo(
       letters,
-      { opacity: 0},
+      { opacity: 0 },
       {
         opacity: 1,
         stagger: 0.1,
         duration: 1.2, // a bit slower
         ease: "sine.inOut", // smoother curve
-        delay:0.5,
+        delay: 0.5,
       }
     );
-
 
     // Paragraph animation with delay
     gsap.fromTo(
@@ -54,10 +52,10 @@ function Hero() {
   return (
     <div className="p-4 h-[100vh] font-secondary">
       <div className="relative w-full h-full overflow-hidden rounded-lg">
-         {/* Video */}
+        {/* Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="heroBG.mp4"
+          src="heroBG2.mp4"
           autoPlay
           loop
           muted
